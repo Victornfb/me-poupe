@@ -1,0 +1,13 @@
+{
+	"openapi": "3.0.0",
+	"info" : {
+		"title": "MePoupe! Documentation",
+		"description": "This is a test API for MePoupe!",
+		"version": "1.0.0",
+		"contact": {
+			"email": "victornfb@outlook.com"
+		}
+	},
+	"paths": {
+	}
+}

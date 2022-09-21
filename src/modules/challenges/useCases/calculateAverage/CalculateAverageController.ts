@@ -13,8 +13,8 @@ class CalculateAverageController {
 		const calculateAverageUseCase = container.resolve(CalculateAverageUseCase);
 
 		const average = await calculateAverageUseCase.execute({
-			firstNumber: String(firstNumber),
-			secondNumber: String(secondNumber)
+			firstNumber: firstNumber as string,
+			secondNumber: secondNumber as string
 		});
 
 		return res.status(200).json(average);

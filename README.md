@@ -28,16 +28,28 @@ Instale as dependências
 $ npm install
 ```
 
-Com o docker instalado, basta seguir os passos abaixo:
+Com o docker instalado, execute:
 
 ```bash
-# Instala as dependências e inicia o projeto
 $ docker compose up
 ```
 
 A API estará disponível no seu navegador pelo endereço http://localhost:3333.
 
 A documentação estará disponível pelo endereço http://localhost:3333/api-docs/.
+
+E para consultar o log em tempo real, execute:
+
+```bash
+$ docker logs -f me-poupe
+```
+
+Ao fazer uma requisição para a API, será retornado um log com a seguinte estrutura:
+
+```bash
+# Data e hora | HTTP Código | URL: http://localhost:3333/example | Res: {"message":"Esse é um exemplo"}
+2022-09-21T01:14:18.013Z | GET 200 | URL: /average?firstNumber=2&secondNumber=4.9 | Res: {"average":3}
+```
 
 ## 📝 Licença
 

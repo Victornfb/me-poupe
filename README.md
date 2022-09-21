@@ -22,6 +22,12 @@ $ git clone https://github.com/Victornfb/me-poupe.git
 $ cd me-poupe
 ```
 
+Instale as dependências
+
+```bash
+$ npm install
+```
+
 Com o docker instalado, basta seguir os passos abaixo:
 
 ```bash

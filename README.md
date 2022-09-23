@@ -35,11 +35,7 @@ Com o docker instalado, execute:
 $ docker compose up
 ```
 
-A API estará disponível no seu navegador pelo endereço http://localhost:3333.
-
-A documentação estará disponível pelo endereço http://localhost:3333/api-docs/.
-
-E para consultar o log em tempo real, execute:
+Para fazer a consulta ao log em tempo real, execute:
 
 ```bash
 $ docker logs -f me-poupe
@@ -51,6 +47,10 @@ Ao fazer uma requisição para a API, será retornado um log com a seguinte estr
 # Data e hora | HTTP Código | URL: http://localhost:3333/example | Res: {"message":"Esse é um exemplo"}
 2022-09-21T01:14:18.013Z | GET 200 | URL: /average?firstNumber=2&secondNumber=4.9 | Res: {"average":3}
 ```
+
+A API estará disponível no seu navegador pelo endereço http://localhost:3333.
+
+A documentação estará disponível pelo endereço http://localhost:3333/api-docs/.
 
 ## 📝 Licença
 

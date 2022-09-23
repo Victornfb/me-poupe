@@ -9,5 +9,108 @@
 		}
 	},
 	"paths": {
+		"/average": {
+			"get": {
+				"tags": ["Challenges"],
+				"summary": "Get average from two numbers",
+				"description": "Get average from two numbers",
+				"parameters": [
+					{
+						"name": "firstNumber",
+						"in": "query",
+						"description": "First number",
+						"required": true
+					},
+					{
+						"name": "secondNumber",
+						"in": "query",
+						"description": "Second number",
+						"required": true
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"average": {
+											"type": "number"
+										}
+									}
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Bad request",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"message": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/address": {
+			"get": {
+				"tags": ["Challenges"],
+				"summary": "Get address info from the zip code",
+				"description": "Get address info from the zip code",
+				"parameters": [
+					{
+						"name": "zipcode",
+						"in": "query",
+						"description": "Zip code",
+						"required": true
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Success",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"address": {
+											"type": "object"
+										},
+										"message": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "Bad request",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object",
+									"properties": {
+										"message": {
+											"type": "string"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }

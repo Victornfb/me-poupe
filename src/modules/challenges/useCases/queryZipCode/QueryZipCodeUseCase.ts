@@ -3,7 +3,7 @@ import { AppError } from "@shared/errors/AppError";
 import axios from "axios";
 
 interface IResponse {
-	address: string;
+	address: any;
 	message?: string;
 }
 

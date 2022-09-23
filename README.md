@@ -12,6 +12,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Swagger](https://swagger.io/)
 - [Docker](https://www.docker.com/)
 - [Jest](https://jestjs.io/)
+- [Winston](https://github.com/winstonjs/winston)
 
 ## 🚀 Como executar
 
